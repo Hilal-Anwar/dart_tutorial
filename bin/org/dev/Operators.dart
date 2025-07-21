@@ -19,8 +19,8 @@ class Operators {
   }
 
   String substitute(String va) {
-    var val =
-    (String.fromCharCode(va.codeUnitAt(0)) == '-') ? va.substring(1) : va;
+    var val =(String.fromCharCode(va.codeUnitAt(0)) == '-') ?
+     va.substring(1) : va;
     val = val
         .replaceAll('/-', k1)
         .replaceAll('*-', k2)
@@ -77,7 +77,8 @@ class Operators {
         x = power(x.split('^'));
       }
       x = (x.contains('!')) ? factorial(x) : x;
-      finalValue = i == 0 ? double.parse(x) : finalValue / double.parse(x);
+      finalValue = i == 0 ? double.parse(x) : 
+      finalValue / double.parse(x);
     }
     return finalValue.toString();
   }
@@ -109,7 +110,8 @@ class Operators {
   }
 
   BigInt f(BigInt n) {
-    return (n.compareTo(BigInt.one) > 0) ? (n * (f(n - BigInt.one))) : n;
+    return (n.compareTo(BigInt.one) > 0) ?
+     (n * (f(n - BigInt.one))) : n;
   }
 }
 

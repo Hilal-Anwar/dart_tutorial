@@ -10,7 +10,7 @@ import 'drawengine.dart';
 import 'game.dart';
 
 const PX_PER_BLOCK = 25; // Cell size in pixels
-const SCREEN_WIDTH = 10; // Level width in cells
+const SCREEN_WIDTH = 30; // Level width in cells
 const SCREEN_HEIGHT = 20; // Level height in cells
 const GAME_SPEED = 100; // Update the game every GAME_SPEED ms (= 1000/fps)
 const TIMER_ID = 1;
